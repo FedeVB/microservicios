@@ -1,0 +1,20 @@
+spring:
+  application:
+   name: usuario-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/usuario_service?serverTimezone=America/Argentina/Buenos_Aires
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+   database-platform: org.hibernate.dialect.MySQL8Dialect
+  cloud:
+   config:
+    enabled: true
+    uri: http://localhost:8081
+logging:
+  level:
+   org:
+    hibernate:
+     SQL: debug
+     ddl-auto: update

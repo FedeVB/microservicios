@@ -3,7 +3,6 @@ package com.usuario.service.services.interfaces;
 import java.util.List;
 
 import com.usuario.service.entity.Usuario;
-import com.usuario.service.models.Publicacion;
 
 public interface UsuarioService {
 
